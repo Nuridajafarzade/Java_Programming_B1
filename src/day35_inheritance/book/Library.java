@@ -1,0 +1,25 @@
+package day35_inheritance.book;
+//Runner class
+public class Library {
+    public static void main(String[] args) {
+         Book book = new Book();
+         // this book object reach 6 instances
+        // book.size = 23;
+        // book.duration = 45;
+        EBook ebook = new EBook();
+        // this ebook object can reach 6 instance variables from Super class and
+        //2 instance variable and 1 instance method from its own class
+        ebook.size = 20;
+        ebook.pages = 1035;
+        ebook.title = "Soft Skill";
+        ebook.author = "Nadir";
+        ebook.read();
+
+
+        AudioBook abook = new AudioBook();
+        abook.duration =2.4;
+        abook.narrator = "Morgan Freemon";
+        abook.title = "Java";
+
+    }
+}
